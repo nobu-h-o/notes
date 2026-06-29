@@ -2,6 +2,7 @@
 
 ## 問題設定
 - コンパイラの auto-scheduling（どのループ変換を・どの順で・どのループに・どのパラメータで適用するか）の探索空間が巨大（約 10^170 候補）
+  - 6種の変換とそのパラメータ（tile size など）の組み合わせ＋適用するループの選択を掛け合わせた、loop-optimization sequence の候補数の見積もり
 - 従来の tree-search（Tiramisu autoscheduler の beam search + cost model）は、巨大な探索空間に対し全探索が非現実的なため、探索順序を固定したり変換を一度しか試さなかったりして空間を制限 → その制限ゆえに最適ではない
 - 既存の RL 手法にはそれぞれ穴がある：
   - HalideRL — semi-automatic で未知プログラムに汎化しない
