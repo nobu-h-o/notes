@@ -23,5 +23,6 @@
 - 推論は平均 33.36ms = tree search より 563× 速い（policy network が直接予測するため）
 
 ## 今後
+- もう少し読み進める
 - Polyhedral model、強化学習、ILP（Pearlが利用した Integer Linear Programming)について勉強
 - LOOPer: A Learned Automatic Code Optimizer For Polyhedral Compilersを読む
